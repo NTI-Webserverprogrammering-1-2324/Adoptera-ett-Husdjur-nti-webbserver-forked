@@ -1,8 +1,7 @@
 # Adoptera ett husdjur
 
 ## Description
-This is a project that uses Flask, a easy framework for python. Flask is a great tool for small 
-to medium sized applications and includes all the ncessary tools and aids to help build robust web applications.
+The Adopt-a-Pet project is a web application built with Flask, a lightweight and flexible Python web framework. Flask provides the necessary tools and utilities to develop robust web applications, making it ideal for projects ranging from small-scale to medium-scale applications.
 
 ## Features
 Automatic updated lists on animals.
@@ -16,11 +15,11 @@ Debug Mode: Enable debugging features.
 Host Configuration: Configure the server to listen on all network interfaces.
 
 ## Technologies Used
-Flask
-Python
-HTML
-CSS
-JavaScript
+Flask: A lightweight and versatile Python web framework.
+Python: The programming language used for backend development.
+HTML: Markup language for structuring web pages.
+CSS: Styling language for enhancing the visual presentation of web pages.
+JavaScript: Programming language for implementing dynamic behavior on web pages.
 
 ## Installation
 1. Clone the repository: `git clone https://github.com/your-username/project-name.git`
@@ -40,7 +39,7 @@ JavaScript
    using the links provided.
 
 ## Contributing
-This was by Nina Losanthiah and Sandi Husic.
+This project was developed by Nina Losanthiah and Sandi Husic. Contributions and feedback are welcome from the community to improve and enhance the application further.
 
 ## License
 This project is licensed under the [MIT License](./LICENSE).
