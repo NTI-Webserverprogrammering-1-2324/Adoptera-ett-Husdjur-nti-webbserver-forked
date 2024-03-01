@@ -1,11 +1,24 @@
+"""This code snippet is written in Python and it demonstrates the use of the Flask framework. 
+The Flask module is imported from the flask package. Flask is a popular web framework in Python
+that allows developers to build web applications easily and efficiently. By importing the Flask
+module, we can create an instance of the Flask application and start building our web application 
+using its features and functionalities."""
+
+
+
 from flask import Flask
 from helper import pets  # Importing the pets data from a helper module
 
 app = Flask(__name__)
 
-# Route for the homepage
 @app.route('/')
 def index():
+    """
+    Route for the homepage.
+
+    Returns:
+        str: The HTML content representing the homepage.
+    """
     return '''<h1>Adopt a Pet!</h1>
     <p>Browse through the links below to find your new furry friend:</p>
     <ul>
@@ -15,9 +28,17 @@ def index():
     </ul>                                  
     '''
 
-# Route for displaying a list of animals of a particular type
 @app.route('/animals/<pet_type>')
 def animals(pet_type):
+    """
+    Route for displaying a list of animals of a particular type.
+
+    Args:
+        pet_type (str): The type of pet.
+
+    Returns:
+        str: The HTML content representing the list of pets.
+    """    
     pet_list = pets.get(pet_type, [])  # Get the list of pets of the specified type
     html = f'<h1>List of {pet_type}</h1><ul>'  # Start building the HTML content
     for pet_id, pet in enumerate(pet_list):
@@ -26,9 +47,18 @@ def animals(pet_type):
     html += '</ul>'  # Close the unordered list
     return html  # Return the HTML content
 
-# Route for displaying details of a specific pet
 @app.route('/animals/<pet_type>/<int:pet_id>/')
 def pet(pet_type, pet_id):
+    """
+    Route for displaying details of a specific pet.
+
+    Args:
+        pet_type (str): The type of pet.
+        pet_id (int): The ID of the pet.
+
+    Returns:
+        str: The HTML content representing the pet details.
+    """
     pet_list = pets.get(pet_type, [])  # Get the list of pets of the specified type
     if pet_id < 0 or pet_id >= len(pet_list):
         # If the requested pet ID is out of range, return a 404 error
