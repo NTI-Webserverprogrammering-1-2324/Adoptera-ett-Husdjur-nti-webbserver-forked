@@ -19,7 +19,7 @@ Flask: A lightweight and versatile Python web framework.
 Python: The programming language used for backend development.
 HTML: Markup language for structuring web pages.
 CSS: Styling language for enhancing the visual presentation of web pages.
-JavaScript: Programming language for implementing dynamic behavior on web pages.
+
 
 ## Installation
 1. Clone the repository: `git clone https://github.com/your-username/project-name.git`
